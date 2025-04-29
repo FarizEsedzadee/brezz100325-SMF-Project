@@ -1,0 +1,38 @@
+Copyright © 2023 Simple Machines. All rights reserved.
+
+Developed by: Simple Machines Forum Project  
+Simple Machines  
+https://www.simplemachines.org  
+
+All rights reserved.  
+
+## 1. Simple Machines Forum (SMF) Lisansı  
+SMF'nin kaynak kodunu veya derlenmiş hallerini, aşağıdaki koşulları sağladığınız sürece dağıtabilirsiniz:  
+
+* Kaynak kodunu dağıtırken, yukarıdaki telif hakkı bildirimi, bu koşullar listesi ve aşağıdaki feragatnamenin korunması gerekmektedir.  
+* Derlenmiş (binary) formatında dağıtırken, yukarıdaki telif hakkı bildirimi, bu koşullar listesi ve aşağıdaki feragatname, dağıtımın belgelerinde veya diğer ek materyallerde bulunmalıdır.  
+* "SMF2.1" veya katkıda bulunanların isimleri, önceden yazılı izin olmadan türev ürünleri desteklemek veya tanıtmak için kullanılamaz.  
+
+**Feragatname:**  
+Bu yazılım, olduğu gibi sunulmaktadır ve açık veya zımni hiçbir garanti içermez. Kullanımdan doğabilecek zararlardan telif hakkı sahipleri veya katkıda bulunanlar sorumlu değildir.  
+
+---
+
+## 2. Özel Kod Eklemeleri (Fariz Esedzade Tarafından Geliştirilen Kısımlar)  
+Bu projede SMF'ye ek olarak özel geliştirmeler bulunmaktadır. Bu geliştirmeler aşağıdaki lisans ile korunmaktadır:  
+
+**Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)**  
+
+Bu lisans, aşağıdaki koşulları içerir:  
+✅ **Atıf (BY):** Bu kodları kullanırken, geliştiriciye (Fariz Esedzade) uygun şekilde atıfta bulunulmalıdır.  
+⛔ **Türev Çalışmalara İzin Verilmez (ND):** Bu kodlar değiştirilemez veya türev çalışmalar oluşturulamaz.  
+
+Daha fazla bilgi için: [https://creativecommons.org/licenses/by-nd/4.0/](https://creativecommons.org/licenses/by-nd/4.0/)  
+
+---
+
+## 3. Kullanım Koşulları  
+- SMF’nin lisansına uymanız gerekmektedir.  
+- Özel eklemeler, yalnızca atıf yapılarak kullanılabilir ve değiştirilemez.  
+- Bu projeyi kullanarak yeni bir şey geliştirmek isterseniz, geliştiriciyle iletişime geçmelisiniz.  
+

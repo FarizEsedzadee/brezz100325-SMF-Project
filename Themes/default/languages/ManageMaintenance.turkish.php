@@ -1,0 +1,244 @@
+<?php
+// Version: 2.1.0; ManageMaintenance
+
+$txt['repair_zero_ids'] = 'İleti veya Konu ID\'si 0 olan iletiler ve konular bulundu.';
+$txt['repair_missing_topics'] = 'İleti #%1$d  var olmayan #%2$d konusuna aittir.';
+$txt['repair_missing_messages'] = 'Konu #%1$d herhangi bir ileti bulundurmamaktadır.';
+$txt['repair_topic_wrong_first_id'] = 'Konu #%1$d doğru olmayan %2$d ilk ileti ID\'sine sahiptir.';
+$txt['repair_topic_wrong_last_id'] = 'Konu %1$d doğru olmayan %2$d son ileti ID\'sine sahiptir.';
+$txt['repair_topic_wrong_replies'] = 'Konu %1$d doğru olmayan %2$d ileti sayısına sahiptir.';
+$txt['repair_topic_wrong_unapproved_number'] = 'Konu %1$d doğru olmayan %2$d onaylanmamış ileti sayısına sahiptir.';
+$txt['repair_topic_wrong_approval'] = 'Konu %1$d doğru olmayan onay işaretine sahiptir.';
+$txt['repair_missing_boards'] = 'Konu %1$d varolmayan %2$d bölümüne aittir.';
+$txt['repair_missing_categories'] = 'Bölüm %1$d varolmayan %2$d kategorisine aittir.';
+$txt['repair_missing_posters'] = 'İleti %1$d varolmayan üye %2$d tarafından gönderilmiştir.';
+$txt['repair_missing_parents'] = 'Bölüm #%1$d, erişilemeyen #%2$d bölümünün bir alt bölümüdür.';
+$txt['repair_missing_polls'] = 'Konu #%1$d varolmayan #%2$d anketi ile ilişkilendirilmiştir.';
+$txt['repair_polls_missing_topics'] = '#%1$d , anket olmayan bir konuya bağlanmış #%2$d.';
+$txt['repair_poll_options_missing_poll'] = '#%1$d anketi %2$d seçeneğe sahip fakat bir anketle ilişiklendirilmemiş.';
+$txt['repair_missing_calendar_topics'] = '#%1$d başlıklı olay varolmayan #%2$d başlıklı konuyla ilişkilendirilmiş.';
+$txt['repair_missing_log_topics'] = 'Varolmayan konu #%1$d birden çok kişi için okunmuş olarak işaretlidir.';
+$txt['repair_missing_log_topics_members'] = 'Varolmayan üye #%1$d birden çok iletiyi okunmuş olarak işaretlemiştir.';
+$txt['repair_missing_log_boards'] = 'Varolmayan bölüm #%1$d birden çok kişi için okunmuş olarak işaretlidir.';
+$txt['repair_missing_log_boards_members'] = 'Varolmayan üye #%1$d birden çok bölümü okunmuş olarak işaretlemiştir.';
+$txt['repair_missing_log_mark_read'] = 'Varolmayan bölüm #%1$d birden çok kişi için okunmuş olarak işaretlidir.';
+$txt['repair_missing_log_mark_read_members'] = 'Varolmayan üye #%1$d birden çok bölümü okunmuş olarak işaretlemiştir.';
+$txt['repair_missing_pms'] = 'Varolmayan kişisel ileti #%1$d birden çok kişiye gönderilmiştir.';
+$txt['repair_missing_recipients'] = 'Varolmayan üye #%1$d birden çok kişisel ileti almıştır.';
+$txt['repair_missing_senders'] = 'Varolmayan kişisel ileti #%1$d varolmayan üye #%2$d tarafından gönderilmiştir.';
+$txt['repair_missing_notify_members'] = 'Varolmayan üye #%1$d, tarafından istenen haberdar edilmeler bulunmaktadır.';
+$txt['repair_missing_cached_subject'] = '#%1$d konusunun başlığı başlık önbelleğinde kayıtlı değildir.';
+$txt['repair_missing_topic_for_cache'] = 'Önbellekte bulunan \'%1$s\' kelimesi varolmayan bir konuya bağlıdır.';
+$txt['repair_missing_log_poll_member'] = '#%1$d anketine varolmayan #%2$d üyesi tarafından oy verilmiştir.';
+$txt['repair_missing_log_poll_vote'] = '#%1$d üyesi tarafından varolmayan #%2$d anketine oy verilmiştir.';
+$txt['repair_missing_thumbnail_parent'] = 'Ana resmi var olmayan %1$s başlıklı bir küçük resim bulunmuştur.';
+$txt['repair_report_missing_comments'] = '#%1$d konusuna ait rapora ait yorum bulunmamaktadır.';
+$txt['repair_comments_missing_report'] = '#%1$d rapor yorumu, %2$s tarafından gönderilmiştir ve ait olduğu rapor yoktur.';
+$txt['repair_group_request_missing_member'] = 'Silinmiş üye #%1$d için halen bir grup isteği bulunmaktadır.';
+$txt['repair_group_request_missing_group'] = 'Silinmiş grup #%1$d için halen bir grup isteği bulunmaktadır..';
+
+$txt['repair_currently_checking'] = 'Kontrol Ediliyor: &quot;%1$s&quot;';
+$txt['repair_currently_fixing'] = 'Tamir Ediliyor: &quot;%1$s&quot;';
+$txt['repair_operation_zero_topics'] = 'Alanı (id_topic) 0 olarak ayarlanmış konular';
+$txt['repair_operation_zero_messages'] = 'Alanı (id_topic) 0 olarak ayarlanmış iletiler';
+$txt['repair_operation_missing_topics'] = 'Konu girdisi kayıp iletileri';
+$txt['repair_operation_missing_messages'] = 'İletisi olmayan konular';
+$txt['repair_operation_stats_topics'] = 'Yanlış ilk veya son iletisi kaydına sahip konular';
+$txt['repair_operation_stats_topics2'] = 'Yanlış yanıt sayısına sahip konular';
+$txt['repair_operation_stats_topics3'] = 'Yanlış onaylanmamış ileti sayısına sahip konular';
+$txt['repair_operation_missing_boards'] = 'Varolmayan bölümlerdeki konular';
+$txt['repair_operation_missing_categories'] = 'Varolmayan kategorilerdeki bölümler';
+$txt['repair_operation_missing_posters'] = 'Varolmayan üyelere bağlı iletiler';
+$txt['repair_operation_missing_parents'] = 'Var olmayan bölümlere bağlı alt bölümler';
+$txt['repair_operation_missing_polls'] = 'Varolmayan anketlere bağlı konular';
+$txt['repair_operation_missing_calendar_topics'] = 'Varolmayan konulara bağlı olaylar';
+$txt['repair_operation_missing_log_topics'] = 'Varolmayan konulara bağlı konu kayıtları';
+$txt['repair_operation_missing_log_topics_members'] = 'Varolmayan üyelere bağlı konu kayıtları';
+$txt['repair_operation_missing_log_boards'] = 'Varolmayan bölümlere bağlı bölüm kayıtları';
+$txt['repair_operation_missing_log_boards_members'] = 'Varolmayan üyelere bağlı bölüm kayıtları';
+$txt['repair_operation_missing_log_mark_read'] = 'Varolmayan bölümlere bağlı okunmuş say verisi';
+$txt['repair_operation_missing_log_mark_read_members'] = 'Varolmayan üyelere bağlı okunmuş say verisi';
+$txt['repair_operation_missing_pms'] = 'Ana iletisi kayıp Kişisel İleti alıcıları';
+$txt['repair_operation_missing_recipients'] = 'Silinmiş üyelere gönderilmiş kişisel iletiler';
+$txt['repair_operation_missing_senders'] = 'Varolmayan üyelere bağlı kişisel iletiler';
+$txt['repair_operation_missing_notify_members'] = 'Varolmayan üyelere bağlı haberdar edilme kayıtları';
+$txt['repair_operation_missing_cached_subject'] = 'Arama önbelleği verisi kayıp konular';
+$txt['repair_operation_missing_topic_for_cache'] = 'Varolmayan konulara bağlı arama önbellek verisi';
+$txt['repair_operation_missing_member_vote'] = 'Varolmayan üyelere bağlı anket oyları';
+$txt['repair_operation_missing_log_poll_vote'] = 'Varolmayan anketlere bağlı anket oyları';
+$txt['repair_operation_report_missing_comments'] = 'Yorumu olmayan konu raporları';
+$txt['repair_operation_comments_missing_report'] = 'Konu raporları olmayan rapor yorumları';
+$txt['repair_operation_group_request_missing_member'] = 'Talepte bulunan üyesi kayıp üye grupları';
+$txt['repair_operation_group_request_missing_group'] = 'Varolmayan gruplar için üyelik talepleri';
+
+$txt['salvaged_category_name'] = 'Kurtarma Alanı';
+$txt['salvaged_category_error'] = 'Kurtarma Alanı kategorisi oluşturulamadı!';
+$txt['salvaged_category_description'] = 'Kurtarılan iletiler için oluşturulan bölümler';
+$txt['salvaged_board_name'] = 'Kurtarılan Konular';
+$txt['salvaged_board_description'] = 'Konusu var olmayan iletiler için oluşturulmuş kurtarma konuları';
+$txt['salvaged_board_error'] = 'Kurtarılmış Konular bölümü oluşturulamadı!';
+$txt['salvaged_poll_topic_name'] = 'Kurtarılmış Anket';
+$txt['salvaged_poll_message_body'] = 'Bu anketin konusu bulunmuyor.';
+$txt['salvaged_poll_question'] = 'Bu ankette hiç soru bulunamadı.';
+
+$txt['database_optimize'] = 'Veritabanını İyileştir';
+$txt['database_numb_tables'] = 'Veritabanınızda %1$d tablo bulunmaktadır.';
+$txt['database_optimize_attempt'] = 'Veritabanınız iyileştirilmeye çalışılıyor...';
+$txt['database_optimizing'] = '%1$s İyileştiriliyor... %2$01.2f kb iyileştirildi.';
+$txt['database_already_optimized'] = 'Tüm tablolar zaten iyileştirilmiş.';
+$txt['database_opimize_unneeded'] = 'Herhangi bir tablonun iyileştirilmesi gerekli görülmedi.';
+$txt['database_optimized'] = ' tablo iyileştirildi.';
+$txt['database_no_id'] = 'varolmayan üye ID\'sine sahip';
+
+$txt['apply_filter'] = 'Filtreyi Uygula';
+$txt['applying_filter'] = 'Filtre Uygulanıyor';
+$txt['filter_only_member'] = 'Sadece bu üyeye ait hata iletilerini görüntüle';
+$txt['filter_only_ip'] = 'Sadece bu IP Adresine ait hata iletilerini görüntüle';
+$txt['filter_only_session'] = 'Sadece bu oturuma ait hata iletilerini görüntüle';
+$txt['filter_only_url'] = 'Sadece bu URL\'ye ait hata iletilerini görüntüle';
+$txt['filter_only_message'] = 'Sadece aynı iletiye ait hata iletilerini görüntüle';
+$txt['session'] = 'Oturum';
+$txt['error'] = 'Hata';
+$txt['error_url'] = 'Hataya yol açan sayfanın adresi';
+$txt['error_message'] = 'Hata iletisi';
+$txt['error_file'] = 'Dosya';
+$txt['error_line'] = 'Satır';
+$txt['clear_filter'] = 'Filtre oluştur';
+$txt['remove_selection'] = 'Seçilileri Kaldır';
+$txt['remove_filtered_results'] = 'Tüm Filtrelenmiş Sonuçları kaldır';
+$txt['sure_about_errorlog_remove'] = 'Tüm hata iletilerini kaldırmak istediğinizden emin misiniz?';
+$txt['remove_selection_confirm'] = 'Seçili verileri silmek istediğinize emin misiniz ?';
+$txt['remove_filtered_results_confirm'] = 'Filtrelenmiş verileri silmek istediğinize emin misiniz?';
+$txt['reverse_direction'] = 'Listenin kronolojik sıralamasını ters çevir';
+$txt['error_type'] = 'Hata türü';
+$txt['filter_only_type'] = 'Sadece bu türdeki hataları göster';
+$txt['filter_only_file'] = 'Sadece bu dosyaya ait hataları göster';
+$txt['apply_filter_of_type'] = 'Bu filtreyi uygula';
+$txt['backtrace_title'] = 'Geri izleme bilgileri';
+// argument(s): error message, function, filename, line nr, filehash, $scripturl
+$txt['backtrace_info'] = '<b>#%1$d</b>: %2$s()<br>Tarafından arandı <a href="%6$s?action=admin;area=logs;sa=errorlog;file=%5$s;line=%4$d" onclick="return reqWin(this.href, 600, 480, false);">%3$s on line %4$d</a>';
+
+$txt['errortype_all'] = 'Tüm hatalar';
+$txt['errortype_general'] = 'Genel';
+$txt['errortype_general_desc'] = 'Bir tür içersine kategorize edilmemiş genel hatalar';
+$txt['errortype_critical'] = '<span class="red">Önemli</span>';
+$txt['errortype_critical_desc'] = 'Kritik hatalar. Bu hatalar olabildiğince çabuk çözülmelidirler.  Bu hataların görmezden görülmesi forumunuzun çökmesine veya forum güvenliğinin tehlikeye girmesine sebep olabilir.';
+$txt['errortype_database'] = 'Veritabanı';
+$txt['errortype_database_desc'] = 'Bozuk sorgular yüzünden oluşan veritabanı hataları. Bu hatalar SMF ekibine iletilmelidir.';
+$txt['errortype_undefined_vars'] = 'Tanımlanmamış';
+$txt['errortype_undefined_vars_desc'] = 'Tanımlanmamış değişkenlerin kullanımından kaynaklanan hatalar.';
+$txt['errortype_ban'] = 'Yasaklar';
+$txt['errortype_ban_desc'] = 'Forumunuza erişmek isteyen yasaklı kullanıcıların kaydı.';
+$txt['errortype_template'] = 'Tema';
+$txt['errortype_template_desc'] = 'Temaların yüklenmesi ile ilgili hatalar.';
+$txt['errortype_user'] = 'Kullanıcı';
+$txt['errortype_user_desc'] = 'Kullanıcı hatalardan kaynaklanan hatalardır.  Örneğin yanlış parolalar, yasaklı olunmasına rağmen giriş girişimi veya erişim izni olunmayan yerlere erişim girişimleri.';
+$txt['errortype_cron'] = 'Zamanlanmış Görev';
+$txt['errortype_cron_desc'] = 'Arkaplan görevlerinden kaynaklanan hatalar.';
+$txt['errortype_paidsubs'] = 'Ücretli Anobelikler';
+$txt['errortype_paidsubs_desc'] = 'Ücretli aboneliklerden kaynaklanan, başarısız ödemeleri de içerebilecek hatalar.';
+$txt['errortype_backup'] = 'Yedekler';
+$txt['errortype_backup_desc'] = 'Genellikle işlemin neden başarısız olduğunu belirten yedekleme hataları.';
+$txt['errortype_login'] = 'Girişler';
+$txt['errortype_login_desc'] = 'Başarısız oturum açma girişimlerinin veya saldırı girişimlerinin neden olduğu hatalar.';
+
+$txt['maintain_recount'] = 'Tüm Forum Toplamlarını ve İstatistiklerini Tekrar Hesapla';
+$txt['maintain_recount_info'] = 'Olası bir \'ileti sayım\' veya \'toplam kişisel ileti sayım\' hatasında : bu fonksiyon sizin için kaydedilmiş sayı ve istatistikleri tekrar sayar';
+$txt['maintain_errors'] = 'Hataları bul ve varsa düzelt';
+$txt['maintain_errors_info'] = 'Örneğin, eğer sunucu hataları sonucunda bazı konular kaybolduysa, bu işlev onların bulunmasına yardımcı olacaktır.';
+$txt['maintain_logs'] = 'Gereksiz Kayıtları Temizle';
+$txt['maintain_logs_info'] = 'Bu fonksiyon gereksiz logları temizliyecek. Bir sorun olmadıkça bu işlemden kaçınılmalıdır, fakat her hangi bir şeye zarar vermez';
+$txt['maintain_cache'] = 'SMF önbelleğini boşalt';
+$txt['maintain_cache_info'] = 'Bu işlev, ihtiyaç duyduğunuzda önbelleği boşaltmak için kullanılır.';
+$txt['maintain_optimize'] = 'Tüm tabloları iyileştir';
+$txt['maintain_optimize_info'] = 'Bu görev tüm tabloları en uygun hale getirmenizi sağlar. Efektleri ; Ek yüklerden kurtularak , tabloların boyutların küçülerek forumun hızlanmasını sağlar.';
+$txt['maintain_version'] = 'Dosyaları Güncel Sürümleriyle Karşılaştır';
+$txt['maintain_version_info'] = 'Bu bakım görevi size forum dosyalarınızın sürümü hakkında detaylı bilgi verecek ve resmi sitedeki liste ile karşılaştıracaktır ';
+$txt['maintain_rebuild_settings'] = 'Settings.php dosyasını yeniden derle';
+$txt['maintain_rebuild_settings_info'] = 'Bu görev Settings.php dosyanızı yeniden oluşturur. Dosyadaki değerleri değiştirmez. Ancak içeriğini temizler ve formatını ilk haline göre düzenler.';
+$txt['maintain_run_now'] = 'Görevi Çalıştır';
+$txt['maintain_return'] = 'Forum Bakımına Geri Dön';
+
+$txt['maintain_backup'] = 'Veritabanını Yedekle';
+$txt['maintain_backup_info'] = 'Acil durumlar için veritabanınızın bir yedeğini indirin.';
+$txt['maintain_backup_struct'] = 'Tablo yapısını kaydet.';
+$txt['maintain_backup_data'] = 'Tablo verisini(lerini) kaydet. (Önemli!)';
+$txt['maintain_backup_gz'] = 'Gzip sıkıştırması kullan.';
+$txt['maintain_backup_save'] = 'İndir';
+
+$txt['maintain_old'] = 'Eski İletileri Temizle';
+$txt['maintain_old_since_days1'] = 'Gönderilmemiş tüm konuları kaldır ';
+$txt['maintain_old_since_days2'] = ' günden eski şu iletileri temizle:';
+$txt['maintain_old_nothing_else'] = 'Herhangi bir konu.';
+$txt['maintain_old_are_moved'] = 'Taşınma ve birleştirme bilgilendirme konuları.';
+$txt['maintain_old_are_locked'] = 'Kilitli konular.';
+$txt['maintain_old_are_not_stickied'] = 'Sabit konuları sayma.';
+$txt['maintain_old_all'] = 'Tüm Bölümler (belirli bölümleri seçmek için tıkla)';
+$txt['maintain_old_choose'] = 'Belli Bölümleri Seç (tümünü seçmek için tıkla)';
+$txt['maintain_old_remove'] = 'Kaldır';
+$txt['maintain_old_confirm'] = 'Eski iletileri temizlemek istediğinizden emin misiniz? Bu işlem geri alınamaz!';
+
+$txt['maintain_old_drafts'] = 'Eski tasları sil';
+$txt['maintain_old_drafts_days'] = 'Tüm eski taslakları kaldır.';
+$txt['maintain_old_drafts_confirm'] = 'Eski taslakları silmek istediğinize emin misiniz? Bu işlem geri alınamaz!';
+$txt['maintain_members'] = 'Aktif Olmayan Üyeleri Temizle';
+$txt['maintain_members_ungrouped'] = 'Gruplandırılmamış Üyeler <span class="smalltext">(Herhangi bir üye grubuna dahil olmayan üyeler)</span>';
+$txt['maintain_members_since1'] = 'Şuna sahip olmayan tüm üyeleri kaldır: ';
+$txt['maintain_members_since2'] = ' şu tarihten eski';
+$txt['maintain_members_since3'] = ' tüm üyeleri temizle.';
+$txt['maintain_members_activated'] = 'Üyeliklerini aktifleştirmemiş';
+$txt['maintain_members_logged_in'] = 'Giriş yapmamış';
+$txt['maintain_members_all'] = 'Tüm Üye Grupları';
+$txt['maintain_members_choose'] = 'Seçili Üye Grupları';
+$txt['maintain_members_confirm'] = 'Etkin olmayan bu üyeleri silmek istediğinizden emin misiniz? Bu işlem geri alınamaz!';
+
+$txt['text_title'] = 'TEXT alanına dönüştür';
+$txt['mediumtext_title'] = 'MEDIUMTEXT alanına dönüştür';
+$txt['mediumtext_introduction'] = 'Varsayılan ileti tablosu en fazla 65535 sayıda karakter kabul edebilir, daha fazla sayı kaydedebilmek için sütun tipi "MEDIUMTEXT" olarak dönüştürülmelidir. Daha sonra bu dönüşüm geri alınarak TEXT olarak tekrar güncellenebilir (ve bu geri alma işlemi, veritabanı boyutundan kazanç sağlar), ancak <strong>sadece eğer</strong> hiçbir iletinin boyutu 65535 karateri aşmıyorsa. Dönüşüm işleminden önce bu durum doğrulanacaktır.';
+$txt['body_checking_introduction'] = 'Bu fonksiyon mesaj metinlerinin içinde bulunduran veritabanı sütununu "TEXT" formatına çevirecektir (şu anda "MEDIUMTEXT"). Bu operasyon her mesajın kapladığı alanı az da olsa düşürecektir (mesaj başına 1 byte). Eğer veritabanında saklanan herhangi bir mesaj 65535 karakterden büyükse, mesaj kesilecek ve metnin o parçası kaybolacaktır.';
+$txt['exceeding_messages'] = 'Takip eden iletiler 65535 karakterden uzun olduğu için işlem tarafından kesilecek:';
+$txt['exceeding_messages_morethan'] = 'Ve diğer %1$d';
+$txt['convert_to_text'] = 'Hiçbir ileti 65535 karakterden uzun değildir. Hiçbir bilgi kaybı olmadan dönüşümü güvenle yapabilirsiniz.';
+$txt['convert_to_suggest_text'] = 'Veritabanınızda iletilerin saklandığı sütun şu anda MEDIUMTEXT formatında fakat bir ileti için izin verilen maksimum karakter sayısı 65535ten daha düşük olarak ayarlanmış. Yer tasarrufu sağlamak için sütun formatını TEXT olarak güncelleyebilirsiniz.';
+
+$txt['entity_convert_title'] = 'HTML elemanlarını UTF-8 karakterlere dönüştür';
+$txt['entity_convert_only_utf8'] = 'HTML elemanlarının dönüştürülebilmesi için öncelikle veritabanının UTF-8 biçminde olması gereklidir.';
+$txt['entity_convert_introduction'] = 'Bu fonksiyon veritabanında saklanan tüm HTML elemanları UTF-8 karakterlere çevirecektir. Bu özellik veritabanını ISO-8859-1 gibi latin bir karakter setinden UTF-8\'e dönüştürenler fakat veritabanında latin olmayan karakterler bulunduranlar için gereklidir. Tarayıcı tüm karakterleri HTML elemanlar olarak gönderir. Örneğin, HTML elemanı &amp;#945; yunanca harf &#945; (alfa) yı temsil eder. Elemanların UTF-8\'e dönüştürülmesi arama ve sıralama verimliliğini artıracak ve alandan kazanç sağlatacaktır.';
+$txt['entity_convert_proceed'] = 'Devam Et';
+
+// Move topics out.
+$txt['move_topics_maintenance'] = 'Konuları Taşı';
+$txt['move_topics_select_board'] = 'Bölüm Seç';
+$txt['move_topics_from'] = 'Taşıma İşlemi:';
+$txt['move_topics_to'] = '->';
+$txt['move_topics_now'] = 'Şimdi Taşı';
+$txt['move_topics_confirm'] = '&quot;%board_from%&quot; bölümündeki TÜM konuları &quot;%board_to%&quot; bölümüne taşımak istediğinize emin misiniz?';
+$txt['move_topics_older_than'] = 'Süresi geçen konuları taşı:';
+$txt['move_type_sticky'] = 'Sabit konular';
+$txt['move_type_locked'] = 'Kilitli konular';
+$txt['move_zero_all'] = 'Tüm konuları taşımak için 0 giriniz';
+
+$txt['maintain_reattribute_posts'] = 'Kullanıcı İletilerini İlişkilendir';
+$txt['reattribute_guest_posts'] = 'Şununla gönderilmiş iletileri';
+$txt['reattribute_email'] = 'E-Posta';
+$txt['reattribute_username'] = 'Kullanıcı Adı';
+$txt['reattribute_current_member'] = 'Üye ile ilişkilendir';
+$txt['reattribute_increase_posts'] = 'İleti sayısını güncelle';
+$txt['reattribute'] = 'İlişkilendir';
+// Don't use entities in the below string.
+$txt['reattribute_confirm'] = '"%find%" (%type%) tarafından gönderilmiş tüm iletileri "%member_to%" üyesiyle ilişkilendirmek istediğinize emin misiniz?';
+$txt['reattribute_confirm_username'] = 'kullanıcı adı';
+$txt['reattribute_confirm_email'] = 'e-posta adresi';
+$txt['reattribute_cannot_find_member'] = 'İlişkilendirilecek üye bulunamadı.';
+
+$txt['maintain_recountposts'] = 'Kullanıcı iletilerini yeniden say';
+$txt['maintain_recountposts_info'] = 'Kullanıcıların toplam ileti sayısını güncellemek için bu bakımı çalıştırın. Sayılabilir tüm iletileri kullanıcılara göre tek tek yeniden hesaplayarak üye bilgilerindeki ileti sayısını günceller.';
+
+$txt['safe_mode_enabled'] = 'Sunucunuzda <a href="http://php.net/manual/en/features.safe-mode.php">safe_mode</a> açık!<br>Bu araçla yapılacak bir yedekleme tam güvenilir olmayabilir!';
+$txt['use_external_tool'] = 'Lütfen harici bir veritabanı yedekleme aracı kullanmayı da düşünün; bu araçla alacağınız yedekler %100 güvenilir olmayabilir.';
+$txt['zipped_file'] = 'Dilerseniz sıkıştırılmış (zipli) bir yedek oluşturabilirsiniz.';
+$txt['plain_text'] = 'Yedek almak için en iyi yöntem, sade text dosyası oluşturmaktır, sıkıştırılmış bir yedek tam olarak güvenilir olmayabilir.';
+$txt['enable_maintenance1'] = 'Forumunuzun boyutu dikkate alındığında, yedek almaya başlamadan önce forumu bakım moduna almanız önerilir.';
+$txt['enable_maintenance2'] = 'Forumunuzun boyutu büyük olduğundan, başlamak için önce forumu bakım moduna alın.';
+
+?>
